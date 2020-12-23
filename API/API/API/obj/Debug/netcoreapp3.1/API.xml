@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.DepartmentController.Get">
+            <summary>
+            отримати список кафедр
+            </summary>
+        </member>
+        <member name="M:API.Controllers.DepartmentController.Get(System.Int32)">
+            <summary>
+            отримати кафедру по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.DepartmentController.Post(KPI_Schedule.Models.Department)">
+            <summary>
+            додати нову кафедру
+            </summary>
+            <param name="department"></param>
+        </member>
+        <member name="M:API.Controllers.DepartmentController.Put(KPI_Schedule.Models.Department)">
+            <summary>
+            оновити кафедру
+            </summary>
+            <param name="department"></param>
+        </member>
+        <member name="M:API.Controllers.DepartmentController.Delete(System.Int32)">
+            <summary>
+            видалити кафедру по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.DisciplineController.Get">
+            <summary>
+            отримати список предметів.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.DisciplineController.Get(System.Int32)">
+            <summary>
+            отримати предмет по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.DisciplineController.Post(KPI_Schedule.Models.Discipline)">
+            <summary>
+            додати новий предмет
+            </summary>
+            <param name="discipline"></param>
+        </member>
+        <member name="M:API.Controllers.DisciplineController.Put(KPI_Schedule.Models.Discipline)">
+            <summary>
+            оновити предмет
+            </summary>
+            <param name="discipline"></param>
+        </member>
+        <member name="M:API.Controllers.DisciplineController.Delete(System.Int32)">
+            <summary>
+            видалити предмет по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.FacultyController.Get">
+            <summary>
+            отримати список факультетів
+            </summary>
+        </member>
+        <member name="M:API.Controllers.FacultyController.Get(System.Int32)">
+            <summary>
+            отримати факультет по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.FacultyController.Post(KPI_Schedule.Models.Faculty)">
+            <summary>
+            додати новий факультет 
+            </summary>
+            <param name="faculty"></param>
+        </member>
+        <member name="M:API.Controllers.FacultyController.Put(KPI_Schedule.Models.Faculty)">
+            <summary>
+            оновити факультет
+            </summary>
+            <param name="faculty"></param>
+        </member>
+        <member name="M:API.Controllers.FacultyController.Delete(System.Int32)">
+            <summary>
+            видалити факультет по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.GroupController.Get">
+            <summary>
+            отримати список груп
+            </summary>
+        </member>
+        <member name="M:API.Controllers.GroupController.Get(System.Int32)">
+            <summary>
+            отримати групу по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.GroupController.Post(KPI_Schedule.Models.Group)">
+            <summary>
+            додати нову групу 
+            </summary>
+            <param name="group"></param>
+        </member>
+        <member name="M:API.Controllers.GroupController.Put(KPI_Schedule.Models.Group)">
+            <summary>
+            оновити групу
+            </summary>
+            <param name="group"></param>
+        </member>
+        <member name="M:API.Controllers.GroupController.Delete(System.Int32)">
+            <summary>
+            видалити групу по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.ScheduleController.Get">
+            <summary>
+            отримати розклад
+            </summary>
+        </member>
+        <member name="M:API.Controllers.ScheduleController.Get(System.Int32)">
+            <summary>
+            отримати розклад на день по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.ScheduleController.Post(KPI_Schedule.Models.Schedule)">
+            <summary>
+            додати розклад на день
+            </summary>
+            <remarks>
+            Sample request:
+            
+                {
+                  "name": "string",
+                  "teacherId": 0,
+                  "disciplineId": 0,
+                  "groupId": 0,
+                  "time": "string",
+                  "classroom": "string"
+                }
+            </remarks>
+            <param name="schedule"></param>
+        </member>
+        <member name="M:API.Controllers.ScheduleController.Put(KPI_Schedule.Models.Schedule)">
+            <summary>
+            оновити розклад дня
+            </summary>
+            <param name="schedule"></param>
+        </member>
+        <member name="M:API.Controllers.ScheduleController.Delete(System.Int32)">
+            <summary>
+            видалити розклад по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.SettingController.Get">
+            <summary>
+            отримати список налаштувань
+            </summary>
+        </member>
+        <member name="M:API.Controllers.SettingController.Get(System.Int32)">
+            <summary>
+            отримати налаштування по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.SettingController.Post(KPI_Schedule.Models.SettingUniversity)">
+            <summary>
+            додати нове налаштування
+            </summary>
+            <param name="settingUniversity"></param>
+        </member>
+        <member name="M:API.Controllers.SettingController.Put(KPI_Schedule.Models.SettingUniversity)">
+            <summary>
+            оновити налаштування
+            </summary>
+            <param name="settingUniversity"></param>
+        </member>
+        <member name="M:API.Controllers.SettingController.Delete(System.Int32)">
+            <summary>
+            видалити налаштування по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.StudentController.Get">
+            <summary>
+            отримати список студентів
+            </summary>
+        </member>
+        <member name="M:API.Controllers.StudentController.Get(System.Int32)">
+            <summary>
+            отримати студента номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.StudentController.Post(KPI_Schedule.Models.Student)">
+            <summary>
+            додати нового студента
+            </summary>
+            <param name="student"></param>
+        </member>
+        <member name="M:API.Controllers.StudentController.Put(KPI_Schedule.Models.Student)">
+            <summary>
+            оновити студента
+            </summary>
+            <param name="student"></param>
+        </member>
+        <member name="M:API.Controllers.StudentController.Delete(System.Int32)">
+            <summary>
+            видалити студента по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.TeacherController.Get">
+            <summary>
+            отримати список викладачів
+            </summary>
+        </member>
+        <member name="M:API.Controllers.TeacherController.Get(System.Int32)">
+            <summary>
+            отримати викладача по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:API.Controllers.TeacherController.Post(KPI_Schedule.Models.Teacher)">
+            <summary>
+            додати нового викладача
+            </summary>
+            <param name="teacher"></param>
+        </member>
+        <member name="M:API.Controllers.TeacherController.Put(KPI_Schedule.Models.Teacher)">
+            <summary>
+            оновити викладача
+            </summary>
+            <param name="teacher"></param>
+        </member>
+        <member name="M:API.Controllers.TeacherController.Delete(System.Int32)">
+            <summary>
+            видалити викладача по номеру
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>
